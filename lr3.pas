@@ -1,6 +1,7 @@
 Program lr3;
 var
 	f, g : file of integer;
+	// fn : array[0..49] of integer = (1, 3, 95, 51, 14, 9, 76, 85, 53, 61, 44, 39, 63, 31, 84, 28, 94, 2, 63, 27, 96, 7, 79, 20, 20, 37, 14, 69, 83, 21, 34, 39, 68, 72, 75, 72, 82, 66, 25, 55, 84, 26, 98, 52, 47, 95, 92, 48, 82, 31);
 	fn, finalArray : array[0..49] of integer;
 	number, temp, i, j, j1, final : integer;
 	fName, gName : string;
@@ -10,6 +11,10 @@ begin
 	writeln('Source file name:');
 	readln(fName);
 	Assign (f, fName);
+	{Пример записи в фаил}
+	// Rewrite(f);
+	// for i := 0 to 49 do
+	// Write(f, fn[i]);
 	reset(f);
 	i := -1;
 	while not eof(f) do 
